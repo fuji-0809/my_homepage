@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AIシステム開発実績 | fujimoffice</title>
+  <meta name="description" content="AIシステム開発に関する実績一覧。RAG、AI-OCR、業務特化AIエージェント開発などをご紹介します。" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="nav.js" defer></script>
+</head>
+<body>
+  <header class="site">
+    <div class="container site-inner">
+      <a href="index.html" class="brand" aria-label="fujimoffice トップへ"><div class="logo"></div><span>fujimoffice</span></a>
+      <nav aria-label="主要ナビゲーション">
+        <ul>
+          <li><a href="index.html">profile</a></li>
+          <li class="nav-services">
+            <details class="nav-dropdown">
+              <summary>services</summary>
+              <ul class="nav-submenu">
+                <li><a href="services-personal.html">個人向け</a></li>
+                <li><a href="services-business.html">法人向け</a></li>
+              </ul>
+            </details>
+          </li>
+          <li class="nav-works">
+            <details class="nav-dropdown">
+              <summary>works</summary>
+              <ul class="nav-submenu">
+                <li><a href="works-ai.html">AIシステム開発</a></li>
+                <li><a href="works-education.html">学校教育</a></li>
+                <li><a href="works-content.html">コンテンツ作成</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>AIシステム開発</h1>
+      <p>業務課題を対象としたAIシステム開発の主な実績です。</p>
+    </section>
+
+    <section class="card" aria-labelledby="ai-dev-title">
+      <div class="head">
+        <div class="eyebrow">Works <span class="pill">AI Development</span></div>
+        <h2 id="ai-dev-title">プロジェクト一覧</h2>
+      </div>
+      <div class="body">
+        <ul class="list">
+          <li>
+            <b>過去提案資料検索システムの開発</b><br>
+            大手家電メーカー営業部門向け。顧客要望から類似の過去提案資料（pptx）を検索し、過去提案スライドを抽出・出力。
+            <div class="chips"><span class="chip">RAG</span><span class="chip">VBA</span></div>
+          </li>
+          <li>
+            <b>国際物流の最適調達支援システムの開発</b><br>
+            大手総合商社向け。材料調達時のコスト・リードタイム最適化提案、梱包材サイズ選定を支援。
+            <div class="chips"><span class="chip">業務特化</span><span class="chip">国際物流</span></div>
+          </li>
+          <li>
+            <b>AI-OCR: 手書き出品票読み取りシステムの開発</b><br>
+            オークション開催企業向け。不完全な手書き出品票から情報を抽出し、マスターデータ照合で商品コード推定。
+            <div class="chips"><span class="chip">AI-OCR</span><span class="chip">手書き</span></div>
+          </li>
+          <li>
+            <b>AI-OCR: 不動産契約書の情報抽出システムの開発</b><br>
+            企業向け不動産賃貸契約の一括代行業を支援。契約書・重説から約100項目を自動抽出。
+            <div class="chips"><span class="chip">AI-OCR</span><span class="chip">ドキュメント抽出</span></div>
+          </li>
+          <li>
+            <b>AI-OCR: 手書き文字列読み取りシステムの開発</b><br>
+            英数字混在のランダム文字列の抽出精度向上。
+            <div class="chips"><span class="chip">AI-OCR</span><span class="chip">手書き</span></div>
+          </li>
+          <li>
+            <b>見積書生成支援AIエージェントシステムの開発</b><br>
+            RAG・社内文書・Web検索を連携した見積書自動生成チャットボットエージェント。
+            <div class="chips"><span class="chip">RAG</span><span class="chip">chatbot</span><span class="chip">AIエージェント</span><span class="chip">見積自動化</span></div>
+          </li>
+        </ul>
+        <div class="cta">
+          <a class="btn btn-primary" href="works-education.html">学校教育を見る</a>
+          <a class="btn btn-ghost" href="works-content.html">コンテンツ作成を見る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <div>© <span id="y"></span> fujimoffice</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

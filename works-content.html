@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>コンテンツ作成実績 | fujimoffice</title>
+  <meta name="description" content="コンテンツ作成に関する実績一覧。講座制作、論文キュレーション、作問・校閲などをご紹介します。" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="nav.js" defer></script>
+</head>
+<body>
+  <header class="site">
+    <div class="container site-inner">
+      <a href="index.html" class="brand" aria-label="fujimoffice トップへ"><div class="logo"></div><span>fujimoffice</span></a>
+      <nav aria-label="主要ナビゲーション">
+        <ul>
+          <li><a href="index.html">profile</a></li>
+          <li class="nav-services">
+            <details class="nav-dropdown">
+              <summary>services</summary>
+              <ul class="nav-submenu">
+                <li><a href="services-personal.html">個人向け</a></li>
+                <li><a href="services-business.html">法人向け</a></li>
+              </ul>
+            </details>
+          </li>
+          <li class="nav-works">
+            <details class="nav-dropdown">
+              <summary>works</summary>
+              <ul class="nav-submenu">
+                <li><a href="works-ai.html">AIシステム開発</a></li>
+                <li><a href="works-education.html">学校教育</a></li>
+                <li><a href="works-content.html">コンテンツ作成</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>コンテンツ作成</h1>
+      <p>教材・講座・レポートなど、制作系の主な実績です。</p>
+    </section>
+
+    <section class="card" aria-labelledby="content-title">
+      <div class="head">
+        <div class="eyebrow">Works <span class="pill">Content</span></div>
+        <h2 id="content-title">コンテンツ作成関連の実績</h2>
+      </div>
+      <div class="body">
+        <ul class="list">
+          <li>
+            <b>AI論文キュレーション</b><br>
+            LLM・強化学習などの最新論文を読み、要点レポートを累計30本以上作成。
+            <div class="chips"><span class="chip">リサーチ</span><span class="chip">アカデミック</span></div>
+          </li>
+          <li>
+            <b>ChatGPT講座</b><br>
+            2023年上半期にビジネス向けChatGPT講座を制作し、講師を担当。
+            <div class="chips"><span class="chip">生成AI</span><span class="chip">教育コンテンツ</span></div>
+          </li>
+          <li>
+            <b>統計検定準一級講座</b><br>
+            最尤推定・ノンパラメトリック推定・主成分分析に関する演習付き講座を制作・講師。
+            <div class="chips"><span class="chip">統計</span><span class="chip">教育コンテンツ</span></div>
+          </li>
+          <li>
+            <b>資格本の作問・校閲</b><br>
+            G検定、DS検定、数学ストラテジスト検定［上級］などの問題作成・校閲。
+            <div class="chips"><span class="chip">作問</span><span class="chip">校閲</span></div>
+          </li>
+        </ul>
+        <div class="cta">
+          <a class="btn btn-primary" href="works-ai.html">AIシステム開発を見る</a>
+          <a class="btn btn-ghost" href="works-education.html">学校教育を見る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <div>© <span id="y"></span> fujimoffice</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

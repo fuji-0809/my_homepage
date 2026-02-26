@@ -6,6 +6,7 @@
   <title>法人様向けサービス | fujimoffice</title>
   <meta name="description" content="法人様向けサービス。公教育向けAI業務効率化システム開発の概要、想定導入フロー、要件例をご案内します。" />
   <link rel="stylesheet" href="style.css" />
+  <script src="nav.js" defer></script>
 </head>
 <body>
   <header class="site">
@@ -16,8 +17,25 @@
       <nav aria-label="主要ナビゲーション">
         <ul>
           <li><a href="index.html">profile</a></li>
-          <li><a href="services.html">services</a></li>
-          <li><a href="works.html">works</a></li>
+          <li class="nav-services">
+            <details class="nav-dropdown">
+              <summary>services</summary>
+              <ul class="nav-submenu">
+                <li><a href="services-personal.html">個人向け</a></li>
+                <li><a href="services-business.html">法人向け</a></li>
+              </ul>
+            </details>
+          </li>
+          <li class="nav-works">
+            <details class="nav-dropdown">
+              <summary>works</summary>
+              <ul class="nav-submenu">
+                <li><a href="works-ai.html">AIシステム開発</a></li>
+                <li><a href="works-education.html">学校教育</a></li>
+                <li><a href="works-content.html">コンテンツ作成</a></li>
+              </ul>
+            </details>
+          </li>
           <li><a href="contact.html">contact</a></li>
         </ul>
       </nav>
@@ -55,7 +73,7 @@
         </ul>
         <div class="cta">
           <a class="btn btn-primary" href="contact.html">導入相談をする</a>
-          <a class="btn btn-ghost" href="services.html">サービス一覧へ戻る</a>
+          <a class="btn btn-ghost" href="services-personal.html">個人向けを見る</a>
         </div>
       </div>
     </section>

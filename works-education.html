@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>学校教育実績 | fujimoffice</title>
+  <meta name="description" content="学校教育に関する実績一覧。高校数学教育での実務経験をご紹介します。" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="nav.js" defer></script>
+</head>
+<body>
+  <header class="site">
+    <div class="container site-inner">
+      <a href="index.html" class="brand" aria-label="fujimoffice トップへ"><div class="logo"></div><span>fujimoffice</span></a>
+      <nav aria-label="主要ナビゲーション">
+        <ul>
+          <li><a href="index.html">profile</a></li>
+          <li class="nav-services">
+            <details class="nav-dropdown">
+              <summary>services</summary>
+              <ul class="nav-submenu">
+                <li><a href="services-personal.html">個人向け</a></li>
+                <li><a href="services-business.html">法人向け</a></li>
+              </ul>
+            </details>
+          </li>
+          <li class="nav-works">
+            <details class="nav-dropdown">
+              <summary>works</summary>
+              <ul class="nav-submenu">
+                <li><a href="works-ai.html">AIシステム開発</a></li>
+                <li><a href="works-education.html">学校教育</a></li>
+                <li><a href="works-content.html">コンテンツ作成</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>学校教育</h1>
+      <p>教育現場での実務と指導に関する実績です。</p>
+    </section>
+
+    <section class="card" aria-labelledby="education-title">
+      <div class="head">
+        <div class="eyebrow">Works <span class="pill">Education</span></div>
+        <h2 id="education-title">学校教育関連の実績</h2>
+      </div>
+      <div class="body">
+        <ul class="list">
+          <li>
+            <b>高校数学教育</b><br>
+            都内私立高校で非常勤講師（数学）として授業運営を担当。
+            <div class="chips"><span class="chip">高校教員</span><span class="chip">高校数学</span></div>
+          </li>
+        </ul>
+        <div class="cta">
+          <a class="btn btn-primary" href="works-ai.html">AIシステム開発を見る</a>
+          <a class="btn btn-ghost" href="works-content.html">コンテンツ作成を見る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <div>© <span id="y"></span> fujimoffice</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
