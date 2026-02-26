@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>サービス | fujimoffice</title>
+  <meta name="description" content="家庭教師（高校数学・線形代数・微積分・統計・機械学習・Python・生成AI）と、公教育向けAI業務効率化システムの受託開発のご案内。" />
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <header class="site">
+        <div class="container site-inner">
+          <a href="index.html" class="brand" aria-label="fujimoffice トップへ">
+            <div class="logo"></div><span>fujimoffice</span>
+          </a>
+          <nav aria-label="主要ナビゲーション">
+            <ul>
+              <li><a href="index.html">profile</a></li>
+              <li><a href="services.html">services</a></li>
+              <li><a href="works.html">works</a></li>
+              <li><a href="contact.html">contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>お問い合わせ</h1>
+      <p>以下のフォームにご相談・体験レッスンのご希望、受託開発のご依頼、その他なんでもお気軽にご連絡ください。藤本の個人メアドにメッセージが届きます。</p>
+      <p>迷惑メールや望まない営業メールを除き、原則24時間以内にお返事いたします。返信が来ない場合はお手数ですが、入力メールアドレスを再度確認した上でもう一度お送りいただけますと幸いです。</p>
+    </section>
+    <section id="contact" class="card" aria-labelledby="contact-title">
+      <div class="body">
+        <form id="contact-form" action="https://formspree.io/f/mblangla" method="POST" novalidate>
+          <br>
+          <div class="grid" style="grid-template-columns:1fr 1fr; gap:12px;">
+            <label>
+              <span>お名前</span><br>
+              <input name="name" required type="text" minlength="2" style="width:80%; padding:12px; margin-top:6px; border-radius:10px; border:1px solid rgba(100,80,150,.18); background:var(--panel); color:var(--text);" />
+            </label>
+            <label>
+              <span>メールアドレス</span><br>
+              <input name="email" required type="email" inputmode="email" autocomplete="email" style="width:80%; padding:12px; margin-top:6px; border-radius:10px; border:1px solid rgba(100,80,150,.18); background:var(--panel); color:var(--text);" />
+            </label>
+          </div>
+          <label style="display:block; margin-top:10px;">
+            <span>メッセージ</span>
+            <textarea name="message" rows="6" required minlength="10" style="width:100%; padding:12px; margin-top:6px; border-radius:10px; border:1px solid rgba(100,80,150,.18); background:var(--panel); color:var(--text);"></textarea>
+          </label>
+          <input type="hidden" name="_subject" value="fujimoffice サイトからの問い合わせ">
+          <input type="hidden" name="_replyto" value="">
+          <div class="cta" style="margin-top:12px;">
+            <button id="submit-btn" class="btn btn-primary" type="submit">送信する</button>
+          </div>
+          <div id="form-status" class="status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const y = document.getElementById('y');
+      if (y) y.textContent = new Date().getFullYear();
+    
+      const form = document.getElementById('contact-form');
+      const statusEl = document.getElementById('form-status');
+      const submitBtn = document.getElementById('submit-btn');
+      if (!form) return;
+    
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        statusEl.textContent = '';
+        submitBtn.disabled = true;
+    
+        const data = new FormData(form);
+        const email = String(data.get('email') || '');
+        if (!/.+@.+\..+/.test(email)) {
+          statusEl.textContent = 'メールアドレスをご確認ください。';
+          statusEl.className = 'status err';
+          submitBtn.disabled = false;
+          return;
+        }
+        try {
+          const res = await fetch('https://formspree.io/f/mblangla', {
+            method: 'POST',
+            body: data,
+            headers: { 'Accept': 'application/json' }
+          });
+          if (res.ok) {
+            form.reset();
+            statusEl.textContent = '送信が完了しました。折り返しご連絡いたします。';
+            statusEl.className = 'status ok';
+          } else {
+            const j = await res.json().catch(() => ({}));
+            statusEl.textContent = j.errors ? j.errors.map(x => x.message).join(' / ') : '送信に失敗しました。時間をおいてお試しください。';
+            statusEl.className = 'status err';
+          }
+        } catch {
+          statusEl.textContent = 'ネットワークエラーが発生しました。接続をご確認ください。';
+          statusEl.className = 'status err';
+        } finally {
+          submitBtn.disabled = false;
+        }
+      });
+    });
+    </script>
+  <footer>
+    <div class="container foot">
+      <div>© <span id="y"></span> fujimoffice</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>法人様向けサービス | fujimoffice</title>
+  <meta name="description" content="法人様向けサービス。公教育向けAI業務効率化システム開発の概要、想定導入フロー、要件例をご案内します。" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site">
+    <div class="container site-inner">
+      <a href="index.html" class="brand" aria-label="fujimoffice トップへ">
+        <div class="logo"></div><span>fujimoffice</span>
+      </a>
+      <nav aria-label="主要ナビゲーション">
+        <ul>
+          <li><a href="index.html">profile</a></li>
+          <li><a href="services.html">services</a></li>
+          <li><a href="works.html">works</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>法人様向けサービス</h1>
+      <p>公教育現場の運用を理解した上で、AIを使った業務効率化システムの設計・開発をご支援します。</p>
+    </section>
+
+    <section id="dev" class="card" aria-labelledby="dev-title">
+      <div class="head">
+        <div class="eyebrow">For Schools <span class="pill">公教育 × AI</span></div>
+        <h2 id="dev-title">テスト採点の自動化システム開発（開発中）</h2>
+        <p class="lead">AI-OCRと生成AIを組み合わせ、採点業務の効率化と品質担保を両立する仕組みを設計しています。</p>
+      </div>
+      <div class="body">
+        <h3>想定の導入フロー</h3>
+        <ol class="flow" aria-label="導入フロー">
+          <li>現状業務と採点ルールのヒアリング</li>
+          <li>運用要件を整理し、実現方法を提案</li>
+          <li>PoC（試験導入）と精度検証</li>
+          <li>改善後に本番運用へ移行</li>
+        </ol>
+        <h3>想定の実装要件</h3>
+        <ul class="list" aria-label="想定ユースケース">
+          <li>クラス名簿（Excel）と模範解答（PDF）をアップロードし、問題文や問題数を抽出</li>
+          <li>問題ごとに別解・採点基準などを追記可能</li>
+          <li>実施済みテストをクラス単位でスキャンし、PDFとしてアップロード</li>
+          <li>OCRによる一致確認と生成AIによる妥当性確認を組み合わせた自動採点</li>
+          <li>採点者が結果を確認し、必要に応じて修正</li>
+          <li>成績入力済み名簿と採点済みPDFを出力</li>
+        </ul>
+        <div class="cta">
+          <a class="btn btn-primary" href="contact.html">導入相談をする</a>
+          <a class="btn btn-ghost" href="services.html">サービス一覧へ戻る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <div>© <span id="y"></span> fujimoffice</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

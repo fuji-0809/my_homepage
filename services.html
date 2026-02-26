@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>サービス | fujimoffice</title>
+  <meta name="description" content="fujimofficeのサービス一覧。個人様向け（家庭教師）と法人様向け（公教育向けAIシステム開発）に分けてご案内します。" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site">
+    <div class="container site-inner">
+      <a href="index.html" class="brand" aria-label="fujimoffice トップへ">
+        <div class="logo"></div><span>fujimoffice</span>
+      </a>
+      <nav aria-label="主要ナビゲーション">
+        <ul>
+          <li><a href="index.html">profile</a></li>
+          <li><a href="services.html">services</a></li>
+          <li><a href="works.html">works</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>サービス</h1>
+      <p>ご相談内容に応じて、個人様向けと法人様向けの2つのサービスをご用意しています。</p>
+    </section>
+
+    <div class="grid">
+      <section class="card" aria-labelledby="individual-title">
+        <div class="head">
+          <div class="eyebrow">For Individuals <span class="pill">個人様向け</span></div>
+          <h2 id="individual-title">AI・データサイエンス家庭教師</h2>
+          <p class="lead">数学基礎からPython実装、生成AI活用まで、目的に合わせて伴走します。</p>
+        </div>
+        <div class="body">
+          <ul class="list" aria-label="個人様向けサービス概要">
+            <li>対象: 高校生・高専生・大学生・社会人</li>
+            <li>内容: 数学、統計、機械学習、Python、生成AIアプリ開発</li>
+            <li>形式: オンライン個別指導（50分単位）</li>
+          </ul>
+          <div class="cta">
+            <a class="btn btn-primary" href="services-personal.html">個人様向けの詳細を見る</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="business-title">
+        <div class="head">
+          <div class="eyebrow">For Business <span class="pill">法人様向け</span></div>
+          <h2 id="business-title">公教育向けAI業務効率化システム開発</h2>
+          <p class="lead">教育現場での運用知見とAI開発経験を活かし、業務効率化を支援します。</p>
+        </div>
+        <div class="body">
+          <ul class="list" aria-label="法人様向けサービス概要">
+            <li>対象: 学校法人、教育事業者、教育関連部門</li>
+            <li>主領域: テスト採点自動化、AI-OCR、生成AI活用</li>
+            <li>提供形態: 要件整理からPoC・導入設計まで伴走</li>
+          </ul>
+          <div class="cta">
+            <a class="btn btn-primary" href="services-business.html">法人様向けの詳細を見る</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="card" aria-labelledby="contact-guide-title">
+      <div class="head">
+        <h2 id="contact-guide-title">どちらに当てはまるか迷う場合</h2>
+      </div>
+      <div class="body">
+        <p class="lead">ご相談内容を確認し、個人向け・法人向けのどちらで進めるのが適切かをご提案します。</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="contact.html">お問い合わせする</a>
+          <a class="btn btn-ghost" href="works.html">実績を見る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <div>© <span id="y"></span> fujimoffice</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

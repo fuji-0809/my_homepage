@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>藤本隆汰 | AIエンジニア・講師</title>
+  <meta name="description" content="藤本隆汰のポートフォリオサイト。AI、データサイエンス、公教育に関する実績をご紹介します。">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site">
+    <div class="container site-inner">
+      <a href="index.html" class="brand" aria-label="fujimoffice トップへ">
+        <div class="logo"></div><span>fujimoffice</span>
+      </a>
+      <nav aria-label="主要ナビゲーション">
+        <ul>
+          <li><a href="index.html">profile</a></li>
+          <li><a href="services.html">services</a></li>
+          <li><a href="works.html">works</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>自己紹介</h1>
+      <p>公教育の課題解決を目指すフリーAIエンジニア・講師のポートフォリオサイトです。</p>
+    </section>
+
+    <section class="card" aria-labelledby="profile-title">
+      <div class="head">
+      </div>
+      <div class="body">
+        <div class="profile-wrap">
+          <div class="profile-card">
+            <img src="images/official_myimage.jpg" alt="藤本隆汰の写真" class="profile-photo">
+            <h2 id="profile-title">profile</h2>
+            <div class="quick">
+              <div class="row"><span class="label">名前</span><span>藤本 隆汰</span></div>
+              <div class="row"><span class="label">Name</span><span>Ryuta Fujimoto</span></div>
+              <div class="row"><span class="label">屋号</span><span>fujimoffice</span></div>
+              <div class="row"><span class="label">生年月</span><span>1998年8月</span></div>
+              <div class="row"><span class="label">出身</span><span>北海道札幌市</span></div>
+              <div class="chips">
+                <span class="chip">AIエンジニア</span>
+                <span class="chip">データサイエンス</span>
+                <span class="chip">教育×AI</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h2>history</h2>
+            <div class="timeline">
+              <div class="t-item"><b>2017–2018</b><br>北海道札幌西高校 卒業<br>北海道教育大学札幌校 入学</div>
+              <div class="t-item"><b>2021</b><br>北海道教育大学札幌校 中退<br>東京理科大学理学部第二部数学科 3年次編入学<br>データサイエンス教材作成を開始</div>
+              <div class="t-item"><b>2023</b><br>東京理科大学理学部第二部数学科 卒業<br>株式会社テクノプロ（データサイエンス課）入社</div>
+              <div class="t-item"><b>2024</b><br>株式会社テクノプロ 退社<br>株式会社QuackShiftにAIエンジニアとして参画（業務委託）</div>
+              <div class="t-item"><b>2025</b><br>専修大学附属高等学校 非常勤講師（数学）<br>同校 契約満了</div>
+              <div class="t-item"><b>現在</b><br>株式会社QuackShift AIエンジニア（業務委託）<br>数学・データサイエンス講師</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <div>© <span id="y"></span> fujimoffice</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
