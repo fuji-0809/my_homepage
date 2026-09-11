@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>法人様向けサービス | fujimoffice</title>
+  <meta name="description" content="法人様向けサービス。公教育向けAI業務効率化システム開発の概要、想定導入フロー、要件例をご案内します。" />
+  <link rel="stylesheet" href="../../assets/css/style.css?v=20260911-sumi" />
+  <script src="../../assets/js/nav.js?v=20260911-local-links" defer></script>
+</head>
+<body>
+  <header class="site">
+    <div class="container site-inner">
+      <a href="/" class="brand" aria-label="fujimoffice トップへ">
+        <div class="logo"></div><span>fujimoffice</span>
+      </a>
+      <nav aria-label="主要ナビゲーション">
+        <ul>
+          <li><a href="/">profile</a></li>
+          <li class="nav-services">
+            <details class="nav-dropdown">
+              <summary>services</summary>
+              <ul class="nav-submenu">
+                <li><a href="/services/personal/">個人向け</a></li>
+                <li><a href="/services/business/">法人向け</a></li>
+              </ul>
+            </details>
+          </li>
+          <li class="nav-works">
+            <details class="nav-dropdown">
+              <summary>works</summary>
+              <ul class="nav-submenu">
+                <li><a href="/works/ai/">AIシステム開発</a></li>
+                <li><a href="/works/education/">学校教育</a></li>
+                <li><a href="/works/content/">コンテンツ作成</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="/contact/">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>学校の採点時間を、<br>教育の時間へ。</h1>
+      <p>合同会社3rducationが開発・運営する、学校向けAI自動採点ツール「澄」のご案内です。</p>
+    </section>
+
+    <section id="dev" class="card" aria-labelledby="dev-title">
+      <div class="head">
+        <div class="eyebrow">For Schools <span class="pill">AI自動採点</span></div>
+        <h2 id="dev-title">AI自動採点ツール「澄」</h2>
+        <p class="lead">答案の一次判定から集計・返却までを支援。先生は、確認が必要な答案に時間を使えます。</p>
+      </div>
+      <div class="body">
+        <img src="../../images/sumi-ai-grading.png" alt="答案とAIによる採点結果を確認する先生" class="works-illustration">
+        <h3>澄でできること</h3>
+        <ul class="list" aria-label="澄の主な機能">
+          <li><b>AIが全答案を一次判定</b><br>正答・誤答・要確認の候補を整理し、先生が確認に集中できる状態をつくります。</li>
+          <li><b>記述・図やグラフの問題にも対応</b><br>模範解答や採点基準をもとに、文章の意味や図の着眼点を踏まえた採点を支援します。</li>
+          <li><b>集計・返却までを支援</b><br>採点結果を自動集計し、答案と分析ファイルをまとめて返却できます。</li>
+          <li><b>最終判断は先生が行う</b><br>AIの判定はあくまで支援。必要に応じて確認・修正し、先生の判断で採点結果を決定できます。</li>
+        </ul>
+        <div class="cta">
+          <a class="btn btn-primary" href="https://www.3rducation.com/" target="_blank" rel="noopener noreferrer">澄の詳細・デモ相談はこちら</a>
+          <a class="btn btn-ghost" href="/services/personal/">個人向けを見る</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <div>© <span id="y"></span> fujimoffice</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

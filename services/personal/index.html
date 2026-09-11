@@ -5,24 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>個人様向けサービス | fujimoffice</title>
   <meta name="description" content="個人様向けサービス。AI・データサイエンス家庭教師の指導内容、料金、受講開始までの流れをご案内します。" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="nav.js" defer></script>
+  <link rel="stylesheet" href="../../assets/css/style.css?v=20260911-journey" />
+  <script src="../../assets/js/nav.js?v=20260911-local-links" defer></script>
 </head>
 <body>
   <header class="site">
     <div class="container site-inner">
-      <a href="index.html" class="brand" aria-label="fujimoffice トップへ">
+      <a href="/" class="brand" aria-label="fujimoffice トップへ">
         <div class="logo"></div><span>fujimoffice</span>
       </a>
       <nav aria-label="主要ナビゲーション">
         <ul>
-          <li><a href="index.html">profile</a></li>
+          <li><a href="/">profile</a></li>
           <li class="nav-services">
             <details class="nav-dropdown">
               <summary>services</summary>
               <ul class="nav-submenu">
-                <li><a href="services-personal.html">個人向け</a></li>
-                <li><a href="services-business.html">法人向け</a></li>
+                <li><a href="/services/personal/">個人向け</a></li>
+                <li><a href="/services/business/">法人向け</a></li>
               </ul>
             </details>
           </li>
@@ -30,13 +30,13 @@
             <details class="nav-dropdown">
               <summary>works</summary>
               <ul class="nav-submenu">
-                <li><a href="works-ai.html">AIシステム開発</a></li>
-                <li><a href="works-education.html">学校教育</a></li>
-                <li><a href="works-content.html">コンテンツ作成</a></li>
+                <li><a href="/works/ai/">AIシステム開発</a></li>
+                <li><a href="/works/education/">学校教育</a></li>
+                <li><a href="/works/content/">コンテンツ作成</a></li>
               </ul>
             </details>
           </li>
-          <li><a href="contact.html">contact</a></li>
+          <li><a href="/contact/">contact</a></li>
         </ul>
       </nav>
     </div>
@@ -62,6 +62,7 @@
             <small>入会金なし・教材費実費・オンライン</small>
           </div>
         </div>
+        <p class="notes">指導内容・回数・教材の有無によって費用は変わります。ご希望を伺ったうえでご案内します。</p>
         <h3>取り扱い内容</h3>
         <ul class="list" aria-label="指導内容">
           <li>データサイエンスのための高校数学</li>
@@ -72,15 +73,34 @@
           <li>生成AIアプリ開発（RAG、chatbot、その他作ってみたいものの開発伴走）</li>
         </ul>
         <h3>お申し込みから開始まで</h3>
-        <ol class="flow" aria-label="受講開始までの流れ">
-          <li>お問い合わせ（ご希望の進め方・曜日を共有）</li>
-          <li>無料面談（30〜50分）</li>
-          <li>カリキュラム提案と日程確定</li>
-          <li>初回レッスン開始（オンライン）</li>
-        </ol>
+        <div class="application-guide">
+          <img src="../../images/online-tutoring-flow.png" alt="オンラインで学習相談をする様子" class="application-guide-image">
+          <ul class="application-steps" aria-label="受講開始までの流れ">
+            <li>
+              <span class="application-icon" aria-hidden="true">✉</span>
+              <b>お問い合わせ</b>
+              <span>学びたい内容や希望曜日をお知らせください。</span>
+            </li>
+            <li>
+              <span class="application-icon" aria-hidden="true">◎</span>
+              <b>無料面談</b>
+              <span>オンラインで30〜50分、お話を伺います。</span>
+            </li>
+            <li>
+              <span class="application-icon" aria-hidden="true">▤</span>
+              <b>学習プランをご提案</b>
+              <span>内容と日程を、一緒に決めていきます。</span>
+            </li>
+            <li>
+              <span class="application-icon" aria-hidden="true">↗</span>
+              <b>初回レッスン</b>
+              <span>オンラインで学習をスタートします。</span>
+            </li>
+          </ul>
+        </div>
         <div class="cta">
-          <a class="btn btn-primary" href="contact.html">受講相談をする</a>
-          <a class="btn btn-ghost" href="services-business.html">法人向けを見る</a>
+          <a class="btn btn-primary" href="/contact/">受講相談をする</a>
+          <a class="btn btn-ghost" href="/services/business/">法人向けを見る</a>
         </div>
       </div>
     </section>
